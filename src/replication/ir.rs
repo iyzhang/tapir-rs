@@ -5,24 +5,26 @@
 //! that enforce consistency at a higher layer.
 
 /// IR protocol client
+#[derive(Default)]
 pub struct IrClient {
     // Implementation will be added
 }
 
 impl IrClient {
     pub fn new() -> Self {
-        Self {}
+        Self::default()
     }
 }
 
 /// IR protocol server/replica
+#[derive(Default)]
 pub struct IrReplica {
     // Implementation will be added
 }
 
 impl IrReplica {
     pub fn new() -> Self {
-        Self {}
+        Self::default()
     }
 }
 

@@ -4,24 +4,26 @@
 //! ordered operations and view changes.
 
 /// VR protocol client
+#[derive(Default)]
 pub struct VrClient {
     // Implementation will be added
 }
 
 impl VrClient {
     pub fn new() -> Self {
-        Self {}
+        Self::default()
     }
 }
 
 /// VR protocol replica
+#[derive(Default)]
 pub struct VrReplica {
     // Implementation will be added
 }
 
 impl VrReplica {
     pub fn new() -> Self {
-        Self {}
+        Self::default()
     }
 }
 
