@@ -23,4 +23,3 @@ pub mod transport;
 // Re-export commonly used types
 pub use config::Configuration;
 pub use error::{Error, Result};
-

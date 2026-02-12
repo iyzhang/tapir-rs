@@ -9,7 +9,9 @@ use std::sync::Arc;
 use tokio::sync::RwLock;
 
 use crate::error::{Error, Result};
-use crate::store::common::{Key, Transaction, TransactionId, TransactionStatus, TransactionStore, Value};
+use crate::store::common::{
+    Key, Transaction, TransactionId, TransactionStatus, TransactionStore, Value,
+};
 
 /// TAPIR store client
 pub struct TapirClient {

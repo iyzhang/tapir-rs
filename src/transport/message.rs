@@ -79,8 +79,7 @@ mod tests {
         assert_eq!(msg.msg_type(), "test_msg");
 
         let bytes = msg.to_bytes().unwrap();
-        let deserialized: BasicMessage<TestPayload> =
-            BasicMessage::from_bytes(&bytes).unwrap();
+        let deserialized: BasicMessage<TestPayload> = BasicMessage::from_bytes(&bytes).unwrap();
 
         assert_eq!(deserialized.payload(), &payload);
     }

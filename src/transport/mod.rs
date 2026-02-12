@@ -58,8 +58,7 @@ pub trait Transport: Send + Sync {
     async fn send_message_to_all(&self, msg: &dyn Message) -> Result<()>;
 
     /// Set a timer that fires after the specified duration
-    async fn set_timer(&self, duration_ms: u64, callback: Box<dyn FnOnce() + Send>)
-        -> Result<u64>;
+    async fn set_timer(&self, duration_ms: u64, callback: Box<dyn FnOnce() + Send>) -> Result<u64>;
 
     /// Cancel a timer by ID
     async fn cancel_timer(&self, timer_id: u64) -> Result<bool>;
